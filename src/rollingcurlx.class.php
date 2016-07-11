@@ -223,7 +223,7 @@ Class RollingCurlX {
         $now = microtime($true);
         $request_map = $this->_request_map;
         $requests = $this->_request_map;
-        foreach($request_maps as $ch_hash => $request_num) {
+        foreach($request_map as $ch_hash => $request_num) {
             $request = $requests[$request_num];
             $timeout = $request->timeout;
             $start_time = $request->start_time;
